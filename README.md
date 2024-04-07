@@ -2,7 +2,7 @@
 
 This game is written on Python using PyQt5 library. This project was made to master basic features of PyQt5 library such as simple styling and event listeners
 
-##Project setup
+## Project setup
 
 In order to run this game on your local machine you need to install PyQt5 library:
 

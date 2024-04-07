@@ -23,7 +23,7 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("Froggy")
 
-        self.lbl = QLabel("Frog Coordinates", self)
+        self.lbl = QLabel("Field number", self)
 
         self.lbl.setFixedWidth(WIN_WIDTH)
         
@@ -59,7 +59,7 @@ class MainWindow(QMainWindow):
     
     def btn_clicked(self, b) -> None:
         # print(self.sender().text())
-        self.lbl.setText("Frog Coordinates: " + b.text())
+        self.lbl.setText("Field number: " + b.text())
 
     def keyPressEvent(self, event) -> None:
         key = event.key()
@@ -95,7 +95,6 @@ class MainWindow(QMainWindow):
         
         self.frogMove(x,y)
         
-    ## TODO: Finish frogMove()
     def frogMove(self,x,y):
         if self.validateCoords(x,y):
             self.frog.move(WIN_SPC + x*BTN_SIZE,

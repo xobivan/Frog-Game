@@ -65,11 +65,11 @@ class MainWindow(QMainWindow):
         key = event.key()
 
         match chr(key):
-            case 'A': # Right
+            case 'A': # Left
                 self.frogMove(self.Frog_Coords[0]-1,
                               self.Frog_Coords[1])
                 
-            case 'D': # Left
+            case 'D': # Right
                 self.frogMove(self.Frog_Coords[0]+1,
                               self.Frog_Coords[1])
             case 'W': #Up
